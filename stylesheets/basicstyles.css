@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'open_sansCnLtIt';
+    src: url('fonts/opensans-condlightitalic-webfont.eot');
+    src: url('fonts/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-condlightitalic-webfont.woff2') format('woff2'),
+         url('fonts/opensans-condlightitalic-webfont.woff') format('woff'),
+         url('fonts/opensans-condlightitalic-webfont.ttf') format('truetype'),
+         url('fonts/opensans-condlightitalic-webfont.svg#open_sansCnLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url('fonts/ubuntu-bolditalic-webfont.eot');
+    src: url('fonts/ubuntu-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-bolditalic-webfont.woff') format('woff'),
+         url('fonts/ubuntu-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-bolditalic-webfont.svg#ubuntubold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('fonts/ubuntu-light-webfont.eot');
+    src: url('fonts/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-light-webfont.woff') format('woff'),
+         url('fonts/ubuntu-light-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-light-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubuntu-regular-webfont.eot');
+    src: url('fonts/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-regular-webfont.woff') format('woff'),
+         url('fonts/ubuntu-regular-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-regular-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{ 
+	font-size: 16px;
+}
+
+body {
+	font-size: 16px;
+	min-height: 100%;
+	min-width: 100%;
+	margin: 0;
+	padding: 0;
+	background: url("../images/homepage_images/homepage_background.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+	width: 100%;
+	border-top: 3px solid #F6E8E1;
+	border-bottom: 3px solid #F6E8E1;
+	border-left: 2px ridge #F6E8E1;
+	border-right: 2px ridge #F6E8E1;
+	padding: 10px 0px 0px 0px;
+	background-color: #41C5C8;
+	margin: 0 auto;
+}
+
+nav {
+	border: 1px solid #F6F6F4;
+}
+
+article, aside {
+	display: inline-block;
+	height: 30%;
+	width: 40%;
+	max-height: 700px;
+	padding: 3%;
+}
+
+footer{
+	height: 70px;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	bottom: -70px;
+    margin-top: -70px;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 15px 40px 5px 40px;
+	background-color: #41C5C8;
+
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+	height:100%;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	overflow: auto;
+	padding-bottom: 35px;
+}
+
+.home-tagline {
+	margin: 5% auto;
+	padding: 25px;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 15px;
+	font-family: 'ubuntubold_italic', Arial, Serif;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 3em;
+	color: #520A34;
+}
+
+.home-promo-text {
+	height: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	text-align: center; 
+	font-family: 'ubunturegular', Arial, Serif;
+	font-style: normal;
+	font-size:2em;
+	color: #520A34;
+	float: left;
+}
+
+.product-review {
+	float: right;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.product-image{
+	flex: 1 0.2 50px;
+
+}
+
+.product-image {
+	height: 100%;
+	max-height: 270px;
+	max-width: 141px;
+
+}
+
+img.product-image {
+	float: right;
+}
+
+ .customer-quote {
+ 	display: inline-block;
+ 	height: 85%;
+ 	width: 58%;
+ 	margin: 3%;
+ 	text-align: right;
+ 	word-spacing: 1px;
+ 	font-family: 'open_sansCnLtIt', Arial, Serif;
+ 	font-style: italic;
+ 	font-size: 2.0em;
+ 	float: left;
+ }
+
+div.shop-button-container{
+	height: 100px;
+    width: 40%;
+    margin: 10% auto 10%;
+}
+
+ .shop-button {
+ 	margin: 0 auto;
+ 	font-size: 2em;
+ 	font-family: 'ubunturegular', Georgia, Serif;
+ 	color: white;
+ 	word-spacing: 1px;
+	border: 2px solid #AD235E;
+	width: 100%;
+	height: 100%;
+	background: url(../images/homepage_images/shop_button_image.jpg);
+	transition: font-weight 200ms ease, border 300ms ease;
+ }
+
+ .shop-button:hover {
+ 	font-weight: bold;
+ 	border: 2px solid white;
+ }
+
+.masthead {
+	font-family: Georgia, Serif;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 2.4em;
+	padding-left: 85px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #F6E8E1;
+	border-bottom: 2px ridge #F6F6F4;
+	margin: 0 auto;
+}
+
+ul.header-nav{
+	height: 40px;
+	width: 600px;
+	list-style-type: none;
+	margin: 0px 0px;
+  	padding-left: 50px;
+  	background-color: #41C5C8;
+  	height:30px;
+}
+
+ul.header-nav li{
+	background-color: #41C5C8;
+	font-family: Arial, Serif;
+	font-style: oblique;
+	display: inline-block;
+	margin: 5px 10px;
+	height: 25px;
+	float: left;
+}
+
+.footer{
+	color: black;
+	font-family: Arial, Serif;
+	font-style: italic;	
+	font-size: 0.85em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #41C5C8;	
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+@media all and (min-width: 960px) and (max-width: 1200px) {
+
+	.product-review {
+		flex-flow: column nowrap;
+	}
+
+	.customer-quote {
+		height: 60%;
+		width: 100%;
+		font-size: 1.9em;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 960px) {
+	
+	article, aside{
+		width: 100%;
+	}
+
+	aside{
+		font-size: 1em;
+	}
+
+	.product-review {
+    border: 1px outset #520A34;
+    background-color: #41C5C8;
+    opacity: 0.85;
+    transition: opacity 300ms linear, font-weight 300ms linear ;
+	}
+
+    .product-review:hover{
+    opacity: 1;
+    font-weight: 500;
+    }
+
+   div.product-image {
+   	opacity:1;
+   }
+}
+
+@media all and (max-width: 655px){
+
+	.customer-quote {
+
+		font-size: 1.5em;
+	}
+
+	div.shop-button-container {
+		width: 75%;
+		margin: 5% auto;
+	}
+
+	.main {
+		padding-bottom: 0;
+	}
+}
+
+@media all and (max-width:440px) {
+
+	.home-tagline {
+		font-size: 1.85em;
+	}
+
+	.home-promo-text {
+		font-size: 1.2em;
+	}
+
+	div.product-image {
+		width: 30%;
+	}
+	.customer-quote {
+		font-size: 1em;
+	}
+}
