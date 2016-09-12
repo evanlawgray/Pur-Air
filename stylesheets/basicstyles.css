@@ -80,7 +80,7 @@ nav {
 
 article, aside {
 	display: inline-block;
-	height: 30%;
+	height: 700px;
 	width: 46%;
 	max-height: 700px;
 	padding: 3%;
@@ -130,12 +130,16 @@ ul.header-nav{
 	height: 25px;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-	/*float: left;*/
 }
 
 .wrapper {
 	min-height: 100%;
 	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
 }
 
 .header-image {
@@ -143,7 +147,6 @@ ul.header-nav{
 	width: 100vw;
 	margin: 0;
 	text-align: center;
-	border-bottom: 1px solid #F6F6F4;
 	background: url("../images/homepage_images/homepage_background.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -186,54 +189,58 @@ ul.header-nav{
 	box-sizing: border-box;
 	border: 1px solid #520A34;
 	text-align: center; 
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
 	font-family: 'ubunturegular', Arial, Serif;
 	font-style: normal;
 	font-size:2em;
 	color: #520A34;
-	float: left;
 }
 
 .product-review {
-	max-height: 700px;
+	height: 700px;
 	margin: 0;
 	border: 1px solid #520A34;
 	border-left: 0;
-	float: right;
+	text-align: center;
 	display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
 }
-/* Old flex behaviours for commented-out parent div
-div.product-image{
-	flex: 1 0.2 50px;
-	height: 25%;
+
+.product-image-wrapper{
+	height: 33%;
+	width: auto;
+	position: relative;
+	flex: 1 1 100px;
 }
-*/
 
 .product-image {
-	height: 25%;
+	height: 100%;
 	width: auto;
 	max-height: 270px;
 	max-width: 141px;
-
-}
-
-img.product-image {
-	float: right;
+	position: absolute;
+	top: 40px;
 }
 
  .customer-quote {
  	display: inline-block;
- 	height: 85%;
- 	width: 58%;
- 	margin: 3%;
- 	text-align: right;
+ 	/*height: 85%;*/
+ 	width: 100%;
+ 	margin-top: 5%;
+ 	text-align: center;
  	word-spacing: 1px;
  	font-family: 'open_sansCnLtIt', Arial, Serif;
  	font-style: italic;
  	font-size: 2.0em;
- 	float: left;
+ 	flex-grow: 1;
+ 	flex-shrink: 1;
  }
 
 div.shop-button-container{
