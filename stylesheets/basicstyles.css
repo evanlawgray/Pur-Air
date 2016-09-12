@@ -184,8 +184,8 @@ a:hover {
 	text-align: center;
 	text-transform: uppercase;
 	word-spacing: 15px;
-	font-family: 'ubuntubold_italic', Arial, Serif;
-	font-style: italic;
+	font-family: 'ubuntubold', Arial, Serif;
+	font-style: normal;
 	font-weight: bolder;
 	font-size: 3em;
 	color: #520A34;
@@ -236,8 +236,6 @@ a:hover {
 	width: auto;
 	max-height: 270px;
 	max-width: 141px;
-	position: absolute;
-	top: 40px;
 }
 
  .customer-quote {
@@ -313,6 +311,7 @@ div.shop-button-container{
 @media all and (max-width: 960px) {
 	
 	article, aside{
+		height: 450px;
 		width: 100%;
 	}
 
@@ -321,10 +320,13 @@ div.shop-button-container{
 	}
 
 	.product-review {
-    border: 1px outset #520A34;
+    border: 1px solid #520A34;
+    border-top: 0;
     background-color: #41C5C8;
     opacity: 0.85;
     transition: opacity 300ms linear, font-weight 300ms linear ;
+    display: flex;
+    flex-flow: row nowrap;
 	}
 
     .product-review:hover{
