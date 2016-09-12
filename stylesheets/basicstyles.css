@@ -80,9 +80,12 @@ nav {
 article, aside {
 	display: inline-block;
 	height: 700px;
-	width: 46%;
+	width: 50%;
 	max-height: 700px;
+	margin: 0;
 	padding: 3%;
+	box-sizing: border-box;
+	font-size: 1rem;
 }
 
 footer{
@@ -159,11 +162,11 @@ a:hover {
 .wrapper {
 	min-height: 100%;
 	min-width: 100%;
-	display: flex;
+	/*display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	align-content: stretch;
+	align-content: stretch;*/
 }
 
 .header-image {
@@ -184,6 +187,7 @@ a:hover {
 	height:100%;
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-around;
 	margin: 0;
 	overflow: auto;
 	padding-bottom: 35px;
@@ -210,7 +214,6 @@ a:hover {
 
 .home-promo-text {
 	margin: 0;
-	box-sizing: border-box;
 	border: 1px solid #520A34;
 	text-align: center; 
 	display: flex;
@@ -226,6 +229,7 @@ a:hover {
 
 .product-review {
 	height: 700px;
+	max-height: 700px; 
 	margin: 0;
 	border: 1px solid #520A34;
 	border-left: 0;
@@ -323,9 +327,10 @@ div.shop-button-container{
 
 @media all and (max-width: 960px) {
 	
-	article, aside{
-		height: 450px;
+	.product-review, .home-promo-text {
+		height: 60%;
 		width: 100%;
+		max-height: 450px;
 	}
 
 	aside{
