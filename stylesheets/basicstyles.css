@@ -110,26 +110,37 @@ footer{
 	margin: 0 auto;
 }
 
-ul.header-nav{
+.header-nav {
 	height: 40px;
 	width: 600px;
 	list-style-type: none;
 	margin: 0px 0px;
   	padding-left: 50px;
+  	color: #F6E8E1;
   	background-color: #41C5C8;
-  	height:30px;
   	display: flex;
+  	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.header-nav li{
+.header-nav li {
 	background-color: #41C5C8;
-	font-family: Arial, Serif;
+	font-family: 'ubunturegular', Arial, Serif;
 	font-style: oblique;
 	display: inline-block;
 	margin: 5px 10px;
 	height: 25px;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
+	color: #F6E8E1;
+}
+
+a {
+	text-decoration: none;
+	color: #520A34;
+}
+
+a:hover {
+	color: #F6E8E1;
 }
 
 .wrapper {
