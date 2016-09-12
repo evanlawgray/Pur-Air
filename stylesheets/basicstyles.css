@@ -110,12 +110,23 @@ footer{
 	margin: 0 auto;
 }
 
+.toggle-sidebar-button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+	margin: 8px;
+	position: absolute;
+	top: 3%;
+	right: 2%;
+}	
+
 .header-nav {
 	height: 40px;
 	width: 600px;
 	list-style-type: none;
 	margin: 0px 0px;
-  	padding-left: 50px;
+  	padding: 0px 0px 0px 50px;
   	color: #F6E8E1;
   	background-color: #41C5C8;
   	display: flex;
@@ -124,17 +135,20 @@ footer{
 	align-items: center;
 }
 
-.header-nav li {
+.header-nav-items {
 	background-color: #41C5C8;
 	font-family: 'ubunturegular', Arial, Serif;
 	font-style: oblique;
 	display: inline-block;
-	margin: 5px 10px;
-	height: 25px;
+	margin: 0;
+	/*margin: 5px 10px;*/
+	height: 50%;
+	width: 100px;
 	color: #F6E8E1;
 }
 
 a {
+	width: 100%;
 	text-decoration: none;
 	color: #520A34;
 }
