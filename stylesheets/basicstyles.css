@@ -149,6 +149,10 @@ footer{
 	color: #F6E8E1;
 }
 
+.hidden {
+	visibility: HIDDEN;
+}
+
 a {
 	width: 100%;
 	text-decoration: none;
