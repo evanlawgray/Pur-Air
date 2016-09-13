@@ -325,7 +325,7 @@ div.shop-button-container{
 	}
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 959px) {
 	
 	.product-review, .home-promo-text {
 		height: 60%;
