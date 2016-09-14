@@ -33,22 +33,31 @@
        	    			<h2 class="home-tagline"> Breathe the best <br /> with PureAIR!</h2>
        	    		</div>	
        	    	<div class="wrapper">
-       	    		<section class="main">
-       	    			<article class="home-promo-text">
-       	    				<p></p>
-       	    			</article>
-       	    			<aside class="product-review">
-       	    				<div class="product-image-wrapper"> 
-								
-							</div> 
-							<div class="customer-quote">
-								<p></p>
-							</div>
-       	    			</aside>
-       	    			<div class="shop-button-container">
-       	    				<a href="shop.html"> <button class="shop-button" title="Visit our Webstore!"> Visit Our Webstore
-       	    				</button> </a> <!-- I didn't wan't to shoehorn another image onto the site just to fulfil project requirements so I did this instead. I hope you will count this towards the project requirement for two images with <alt> tags! -->
-       	    			</div>
+       	    		<section class="main contact-us-main">
+       	    			<div class="contact-form-wrapper">
+	       	    			<form action="#" method="post" id="contact-form">
+							  <div class="input-div">
+							    <label for="name">Your Name:</label>
+							    <input type="text" name="name" id="name" />
+							  </div>
+							  
+							  <div class="input-div">
+							    <label for="message-type">Type of Message:</label>
+							    <select name="message-type" id="message-type">
+							      <option value="Shipping">Shipping Inquiry</option>
+							      <option value="Product Inquiry">Product Inquiry</option>
+							    </select>  
+							  </div>
+							  
+							  <div class="input-div">
+							    <label for="message">Your Message:</label> <br />
+							    <textarea name="message" id="message" cols="85" rows="12"></textarea>
+							  </div>
+							  <div class="input-div">
+							    <input type="submit" value="Submit" />
+							  </div>
+							</form>
+						</div>  
        	    		</section>
        	    	</div>
 			<footer> 
