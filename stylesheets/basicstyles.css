@@ -212,7 +212,7 @@ a:hover {
 	padding-bottom: 35px;
 	background-color: #F6F6F4;
 	min-height: 100vh;
-	border-top: 1px solid #520A34;
+	/*border-top: 1px solid #520A34;*/
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
@@ -228,11 +228,14 @@ a:hover {
 	min-height: 100%;
 	min-width: 100%;
 	border: 1px solid #520A34;
-	padding-left: 5%;
+	padding-left: 5%;*/
+	padding-right: 5%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
 	align-items: baseline;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 label {
