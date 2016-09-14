@@ -50,4 +50,20 @@ $(function() {
 		}, 300);
 		$navbarIsOpen = !$navbarIsOpen;
 		});
+
+	// CONTACT US FORM ALERT
+
+	var $submitButton = $(".submit-button");
+
+	$submitButton.on ("click", function(event){
+		event.preventDefault();
+		var $textAreaValue = $("#message").val();
+
+		if ($textAreaValue == "") {
+		alert("You Forgot To Type A Message!");
+		}
+		else {
+		alert("Thanks For Your Message!");
+		}
+	});
 });
