@@ -154,7 +154,6 @@ footer{
 	font-style: oblique;
 	display: inline-block;
 	margin: 0;
-	/*margin: 5px 10px;*/
 	height: 50%;
 	width: 100px;
 	color: #F6E8E1;
@@ -348,7 +347,6 @@ label {
 
  .customer-quote {
  	display: inline-block;
- 	/*height: 85%;*/
  	width: 100%;
  	margin-top: 5%;
  	text-align: center;
