@@ -9,12 +9,13 @@ $(function() {
 	var $navbarButtonIcon = $(".toggle-sidebar-button-icon");
 	var $icon = $(".fa");
 
-
 	//hide the sidebar on initial page load
 	$navbar.css("height", "0px");
 	// create a function to be executed when the toggle button is clicked
 	$toggle.on("click", function() {
+		
 		//Animate the sidebar open
+		
 		var $navbarHeight;
 
 		if ($navbarIsOpen) {
@@ -22,7 +23,6 @@ $(function() {
 			$icon.removeClass("toggle-sidebar-button-active")
 			.removeClass("fa-times")
 			.addClass("fa-bars");
-
 		} else {
 			$navbarHeight = "40px";
 			$icon.addClass("toggle-sidebar-button-active")

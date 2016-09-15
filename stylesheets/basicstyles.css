@@ -478,6 +478,10 @@ div.shop-button-container{
 		max-height: 450px;
 	}
 
+	article.home-promo-text {
+		font-size: 1.5em;
+	}
+
 	aside{
 		font-size: 1em;
 	}
