@@ -86,6 +86,7 @@ article, aside {
 	padding: 3%;
 	box-sizing: border-box;
 	font-size: 1rem;
+	box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
 }
 
 footer{
@@ -213,7 +214,6 @@ a:hover {
 .shop-main {
 	width: 85%;
 	height:100%;
-	/*min-height: 100vh;*/
 	margin: 0;
 	background-color: #F6F6F4;
 	display: flex;
@@ -226,13 +226,15 @@ a:hover {
 .shop-header {
 	margin-top: 0;
 	font-family: "ubunturegular", Arial, Serif;
+	color: #520A34;
 	font-size: 4rem;
 }
 
 .shop-product-window {
 	height: 250px;
 	width: 20%;
-	background-color: white;
+	margin: 1%;
+	background-color: #FCFCFC;
 	border: 1px solid #520A34;
 	flex-flow: column nowrap;
 	display: flex;
@@ -240,6 +242,10 @@ a:hover {
 	align-items: center;
 	align-content: center;
 	flex-grow: 1;
+}
+
+.shop-product-window:hover {
+	cursor: pointer;
 }
 
 @media all and (max-width: 970px){
@@ -302,6 +308,26 @@ a:hover {
 	align-items: center;
 }
 
+.about-promo-text {
+	height: 85vh;
+	width: 85vw;
+	margin: 0;
+	border: 1px solid #520A34;
+	text-align: center; 
+	font-family: 'ubunturegular', Arial, Serif;
+	font-style: normal;
+	font-size:2em;
+	color: #520A34;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-promo-text-box {
+	width: 75%;
+}
+
 .contact-form-wrapper {
 	height: 85vh;
 	width: 75vw;
@@ -323,19 +349,6 @@ a:hover {
 
 label {
 	margin: 2%;
-}
-
-.about-promo-text {
-	display: inline-block;
-	height: 75vh%;
-	width: 75vw;
-	margin: 0;
-	border: 1px solid #520A34;
-	text-align: center; 
-	font-family: 'ubunturegular', Arial, Serif;
-	font-style: normal;
-	font-size:2em;
-	color: #520A34;
 }
 
 .home-tagline {
@@ -413,7 +426,7 @@ label {
  	flex-shrink: 1;
  }
 
-div.shop-button-container{
+.shop-button-container{
 	height: 100px;
     width: 40%;
     margin: 10% auto 10%;
@@ -429,12 +442,14 @@ div.shop-button-container{
 	width: 100%;
 	height: 100%;
 	background: url(../images/homepage_images/shop_button_image.jpg);
-	transition: font-weight 200ms ease, border 300ms ease;
+	transition: font-weight 200ms ease, border 300ms ease, box-shadow 200ms ease;
  }
 
  .shop-button:hover {
+ 	cursor: pointer;
  	font-weight: bold;
  	border: 2px solid white;
+ 	box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
  }
 
 .footer{
@@ -486,8 +501,8 @@ div.shop-button-container{
     border: 1px solid #520A34;
     border-top: 0;
     background-color: #41C5C8;
-    opacity: 0.85;
-    transition: opacity 300ms linear, font-weight 300ms linear ;
+    opacity: 0.9;
+    transition: opacity 300ms linear, font-weight 300ms ease-in ;
     display: flex;
     flex-flow: row nowrap;
 	}
