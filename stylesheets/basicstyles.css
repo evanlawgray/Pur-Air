@@ -234,6 +234,11 @@ a:hover {
 	width: 20%;
 	background-color: white;
 	border: 1px solid #520A34;
+	flex-flow: column nowrap;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 	flex-grow: 1;
 }
 
@@ -242,11 +247,47 @@ a:hover {
 	.shop-product-window {
 		height: 180px;
 		width: 33%;
+		display: flex;
 	}
 
-
 }
+
+.shop-product-image-wrapper {
+	height: 70%;
+	width: auto;
+	max-height: 270px;
+	max-width: 141px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.shop-inventory-alert {
+	height: 15%;
+	width: 90%;
+	font-family: "ubuntu-light-webfont", Arial, Serif;
+	color: red;
+	margin: 3% auto;
+	text-align: center;
+}
+
 .contact-us-main {
+	width: 100%;
+	height:100%;
+	min-height: 100vh;
+	margin: 0;
+	overflow: auto;
+	padding-bottom: 35px;
+	background-color: #F6F6F4;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about-main {
 	width: 100%;
 	height:100%;
 	min-height: 100vh;
@@ -282,6 +323,19 @@ a:hover {
 
 label {
 	margin: 2%;
+}
+
+.about-promo-text {
+	display: inline-block;
+	height: 75vh%;
+	width: 75vw;
+	margin: 0;
+	border: 1px solid #520A34;
+	text-align: center; 
+	font-family: 'ubunturegular', Arial, Serif;
+	font-style: normal;
+	font-size:2em;
+	color: #520A34;
 }
 
 .home-tagline {
