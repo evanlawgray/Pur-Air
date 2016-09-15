@@ -1,17 +1,5 @@
 $(function() {
 
-	// MAKE NAVBAR STICK TO TOP OF PAGE WHEN SCROLLING
-
-/*	$(window).scroll(function () {
-    
-    if ($(window).scrollTop() > 111) {
-      $('header').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 112) {
-      $('header').removeClass('navbar-fixed');
-    }
-  });   */
-
 	// MAKE NAVBAR DROP DOWN WHEN MENU ICON IS PRESSED
 
 	// get the toggle button as a variable
