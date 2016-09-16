@@ -510,18 +510,18 @@ label {
 	}
 
 	.product-review {
-    border: 1px solid #520A34;
-    border-top: 0;
-    background-color: #41C5C8;
-    opacity: 0.9;
-    transition: opacity 300ms linear, font-weight 300ms ease-in ;
-    display: flex;
-    flex-flow: row nowrap;
+	    border: 1px solid #520A34;
+	    border-top: 0;
+	    background-color: #41C5C8;
+	    opacity: 0.9;
+	    transition: opacity 300ms linear, font-weight 300ms ease-in ;
+	    display: flex;
+    	flex-flow: row nowrap;
 	}
 
     .product-review:hover{
-    opacity: 1;
-    font-weight: 500;
+    	opacity: 1;
+    	font-weight: 500;
     }
 
     .product-image-wrapper {
@@ -535,7 +535,7 @@ label {
     }
 
    div.product-image {
-   	opacity:1;
+   		opacity:1;
    }
 }
 
