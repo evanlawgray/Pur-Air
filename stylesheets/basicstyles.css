@@ -86,7 +86,7 @@ article, aside {
 	padding: 3%;
 	box-sizing: border-box;
 	font-size: 1rem;
-	box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 12px rgba(0,0,0,0.1);
 }
 
 footer{
@@ -174,6 +174,7 @@ a:hover {
 	min-height: 100%;
 	min-width: 100%;
 	background-color: #F6F6F4;
+	border: 2px 0px #E0DEDE;
 }
 
 .flex-column {
@@ -201,7 +202,6 @@ a:hover {
 .main {
 	width: 100%;
 	height:100%;
-	/*min-height: 100vh;*/
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -212,10 +212,12 @@ a:hover {
 }
 
 .shop-main {
-	width: 85%;
-	height:100%;
+	width: 80%;
+	height:70%;
 	margin: 0;
+	padding: 3% 4%;
 	background-color: #F6F6F4;
+	border: 2px solid #520A34;
 	display: flex;
 	flex-flow: row wrap ;
 	justify-content: center;
@@ -224,10 +226,12 @@ a:hover {
 }
 
 .shop-header {
-	margin-top: 0;
+	width: 85%;
+	margin-top: 3%;
 	font-family: "ubunturegular", Arial, Serif;
 	color: #520A34;
 	font-size: 4rem;
+	text-align: center;
 }
 
 .shop-product-window {
@@ -242,10 +246,12 @@ a:hover {
 	align-items: center;
 	align-content: center;
 	flex-grow: 1;
+	transition: box-shadow 150ms ease-in;
 }
 
 .shop-product-window:hover {
 	cursor: pointer;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.1);
 }
 
 @media all and (max-width: 970px){
@@ -276,21 +282,6 @@ a:hover {
 	color: red;
 	margin: 3% auto;
 	text-align: center;
-}
-
-.contact-us-main {
-	width: 100%;
-	height:100%;
-	min-height: 100vh;
-	margin: 0;
-	overflow: auto;
-	padding-bottom: 35px;
-	background-color: #F6F6F4;
-	min-height: 100vh;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	align-items: center;
 }
 
 .about-main {
@@ -328,9 +319,25 @@ a:hover {
 	width: 75%;
 }
 
+.contact-us-main {
+	width: 100%;
+	height:100%;
+	min-height: 100vh;
+	margin: 0;
+	overflow: auto;
+	padding-bottom: 35px;
+	background-color: #F6F6F4;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .contact-form-wrapper {
-	height: 85vh;
-	width: 75vw;
+	height: 75vh;
+	width: 65vw;
+	margin-bottom: 3%;
 }
 
 #contact-form {
@@ -345,6 +352,7 @@ a:hover {
 	align-items: baseline;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.1);
 }
 
 label {
