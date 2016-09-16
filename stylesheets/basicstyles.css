@@ -76,6 +76,7 @@ header{
 }
 
 nav {
+	width: 100%;
 	border-top: 1px solid #F6F6F4;
 	border-bottom: 1px solid #F6F6F4;
 
@@ -110,7 +111,7 @@ footer{
 	font-style: normal;
 	font-weight: bolder;
 	font-size: 2.4em;
-	padding-left: 85px;
+	padding-left: 5%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: #F6E8E1;
@@ -136,21 +137,16 @@ footer{
 
 .header-nav {
 	height: 40px;
-	width: 600px;
+	width: 100%;
 	list-style-type: none;
 	margin: 0px 0px;
-  	padding: 0px 0px 0px 50px;
+  	padding-left: 4%;
   	color: #F6E8E1;
   	background-color: #41C5C8;
   	display: flex;
   	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: center;
-}
-
-.navbar-fixed {
-	position: fixed;
-	z-index: 2;
 }
 
 .header-nav-items {
@@ -201,6 +197,25 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+}
+
+.home-tagline {
+	width: 100%;
+	margin: 0 auto;
+	padding: 25px;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 15px;
+	font-family: 'ubunturegular', Arial, Serif;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 4rem;
+	color: #520A34;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 45%;
+	left: 46%;
 }
 
 .main {
@@ -363,25 +378,6 @@ label {
 	margin: 2%;
 }
 
-.home-tagline {
-	width: 100%;
-	margin: 0 auto;
-	padding: 25px;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
-	word-spacing: 15px;
-	font-family: 'ubunturegular', Arial, Serif;
-	font-style: normal;
-	font-weight: bolder;
-	font-size: 3em;
-	color: #520A34;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
-}
-
 .home-promo-text {
 	margin: 0;
 	border: 1px solid #520A34;
@@ -466,7 +462,7 @@ label {
 	color: black;
 	font-family: Arial, Serif;
 	font-style: italic;	
-	font-size: 0.85em;
+	font-size: 0.85rem;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	background-color: #41C5C8;	
@@ -490,12 +486,16 @@ label {
 	.customer-quote {
 		height: 60%;
 		width: 100%;
-		font-size: 1.9em;
+		font-size: 1.9rem;
 		text-align: center;
 	}
 }
 
 @media all and (max-width: 959px) {
+
+	.home-tagline {
+		font-size: 3rem;
+	}
 	
 	.product-review, .home-promo-text {
 		height: 60%;
@@ -503,12 +503,12 @@ label {
 		max-height: 450px;
 	}
 
-	article.home-promo-text {
-		font-size: 1.5em;
+	.home-promo-text {
+		font-size: 2rem;
 	}
 
-	aside{
-		font-size: 1em;
+	.customer-quote {
+		font-size: 1.75rem;
 	}
 
 	.product-review {
@@ -543,37 +543,60 @@ label {
 
 @media all and (max-width: 655px){
 
+	.main {
+		padding-bottom: 0;
+	}
+
 	.product-image-wrapper {
 		height: 185px;
 	}
+
+	.home-promo-text {
+		font-size: 1.75rem;
+	}
 	.customer-quote {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	div.shop-button-container {
 		width: 100%;
 		margin: 5% auto;
-	}
-
-	.main {
-		padding-bottom: 0;
+		box-shadow: none;
 	}
 }
 
 @media all and (max-width:440px) {
 
+	.header-nav-items {
+		width: 75px;
+		font-size: 0.75rem;
+	}
+
+	.header-image {
+		height: 65vh;
+	}
+
 	.home-tagline {
 		font-size: 1.85em;
 	}
 
+	.shop-header {
+		font-size: 2rem;
+	} 
+
 	.home-promo-text {
-		font-size: 1.2em;
+		font-size: 1.1rem;
 	}
 
-	div.product-image {
-		width: 30%;
+	.product-image-wrapper {
+		height: 155px;
 	}
+
 	.customer-quote {
-		font-size: 1em;
+		font-size: 1rem;
+	}
+
+	.footer {
+		font-size: 0.5rem;
 	}
 }
